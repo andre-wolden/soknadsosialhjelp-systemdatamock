@@ -1,0 +1,19 @@
+{
+  "name": "soknadsosialhjelp-systemdatamock",
+  "version": "1.0.0",
+  "description": "soknadsosialhjelp set mock data api",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woldena/soknadsosialhjelp-systemdatamock.git"
+  },
+  "author": "woldena",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/woldena/soknadsosialhjelp-systemdatamock/issues"
+  },
+  "homepage": "https://github.com/woldena/soknadsosialhjelp-systemdatamock#readme"
+}
