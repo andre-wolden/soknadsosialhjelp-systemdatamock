@@ -1,6 +1,6 @@
 {
   "name": "soknadsosialhjelp-systemdatamock",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "soknadsosialhjelp set mock data api",
   "main": "index.js",
   "scripts": {
