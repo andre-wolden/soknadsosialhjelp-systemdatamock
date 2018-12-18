@@ -40,7 +40,7 @@ export enum Valg {
 }
 
 
-export const systemdatamock = {
+const systemdatamock = {
 
 	"settNavn" : (fornavn: string, mellomnavn: string, etternavn: string) => {
 		const navnObject: object =
@@ -180,3 +180,5 @@ export const systemdatamock = {
 		console.warn(midlertidigPostadresse);
 	}
 };
+
+module.exports = systemdatamock;

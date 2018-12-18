@@ -1,4 +1,3 @@
-const systemdatamock = require('./src/index.js');
+const systemdatamock = require('./dist/bundle');
 
-
-console.warn("Hei hei");
+console.warn(systemdatamock);

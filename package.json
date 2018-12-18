@@ -2,10 +2,12 @@
   "name": "soknadsosialhjelp-systemdatamock",
   "version": "1.0.3",
   "description": "soknadsosialhjelp set mock data api",
-  "main": "src/index.js",
+  "main": "index.js",
+  "browser": {
+    "./index.js" : "./browser.js"
+  },
   "scripts": {
-    "test": "test",
-    "build" : "npx tsc ./src/*.ts"
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -22,10 +24,13 @@
     "@babel/core": "^7.2.2",
     "@babel/polyfill": "^7.0.0",
     "@babel/preset-env": "^7.2.0",
-    "@babel/preset-typescript": "^7.1.0"
+    "@babel/preset-typescript": "^7.1.0",
+    "ts-loader": "^5.3.1",
+    "webpack-cli": "^3.1.2"
   },
   "dependencies": {
     "tsc": "^1.20150623.0",
-    "typescript": "^3.2.2"
+    "typescript": "^3.2.2",
+    "webpack": "^4.27.1"
   }
 }
