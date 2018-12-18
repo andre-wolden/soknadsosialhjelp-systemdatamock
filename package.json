@@ -1,6 +1,6 @@
 {
   "name": "soknadsosialhjelp-systemdatamock",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "soknadsosialhjelp set mock data api",
   "main": "src/index.js",
   "scripts": {
@@ -24,6 +24,7 @@
     "@babel/preset-typescript": "^7.1.0"
   },
   "dependencies": {
-    "tsc": "^1.20150623.0"
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.2.2"
   }
 }
