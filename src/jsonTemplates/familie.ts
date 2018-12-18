@@ -1,3 +1,4 @@
+export default
 {
   "diskresjonskode": null,
   "bankkonto": null,

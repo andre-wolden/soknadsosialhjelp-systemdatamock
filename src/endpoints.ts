@@ -1,3 +1,4 @@
+export default
 {
   "adresser": "adresser",
   "norg": "norg",

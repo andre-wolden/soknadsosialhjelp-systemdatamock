@@ -1,3 +1,4 @@
+export default
 {
   "postleveringsPeriode": null,
   "endringstidspunkt": null,

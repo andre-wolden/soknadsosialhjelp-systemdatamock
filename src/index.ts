@@ -1,16 +1,16 @@
-import endpoints from "./endpoints.json";
-import { settMockData} from "./mockRestUtils";
+import endpoints from "./endpoints.js";
+import { settMockData } from "./mockRestUtils";
 
-import adresserJSON from "./jsonTemplates/adresser.json";
-import arbeidJSON from "./jsonTemplates/arbeid.json";
-import brukerprofilJSON from "./jsonTemplates/brukerprofil.json";
-import familieJSON from "./jsonTemplates/familie.json";
-import norgJSON from "./jsonTemplates/norg.json";
-import organisasjonJSON from "./jsonTemplates/organisasjon.json";
-import telefonJSON from "./jsonTemplates/telefon.json";
-import utbetalingJSON from "./jsonTemplates/utbetaling.json";
+import adresserJSON from "./jsonTemplates/adresser.js";
+import arbeidJSON from "./jsonTemplates/arbeid.js";
+import brukerprofilJSON from "./jsonTemplates/brukerprofil.js";
+import familieJSON from "./jsonTemplates/familie.js";
+import norgJSON from "./jsonTemplates/norg.js";
+import organisasjonJSON from "./jsonTemplates/organisasjon.js";
+import telefonJSON from "./jsonTemplates/telefon.js";
+import utbetalingJSON from "./jsonTemplates/utbetaling.js";
 
-import midlertidigPostadresseJSON from "./jsonPartialTemplates/midlertidigPostadresse.json";
+import midlertidigPostadresseJSON from "./jsonPartialTemplates/midlertidigPostadresse.js";
 
 
 const adresser: object = adresserJSON;

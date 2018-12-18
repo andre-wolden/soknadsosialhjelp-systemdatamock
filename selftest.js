@@ -1,4 +1,4 @@
-// const systemdatamock = require('./index.ts');
+const systemdatamock = require('./src/index.js');
 
 
 console.warn("Hei hei");

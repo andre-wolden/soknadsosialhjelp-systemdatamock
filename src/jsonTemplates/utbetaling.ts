@@ -1,3 +1,4 @@
+export default
 {
   "posteringsdato": "2018-12-01",
   "utbetaltTil": {

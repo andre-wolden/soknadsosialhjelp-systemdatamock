@@ -1,3 +1,4 @@
+export default
 {
   "arbeidsforholdIDnav" : 0,
   "ansettelsesPeriode" : {

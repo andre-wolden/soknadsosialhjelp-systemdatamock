@@ -1,3 +1,4 @@
+export default
 {
   "0701": {
     "enhetId": 100000141,

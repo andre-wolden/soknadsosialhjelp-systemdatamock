@@ -1,3 +1,4 @@
+export default
 {
   "arbeidsforholdIDnav" : 0,
   "ansettelsesPeriode" : {
@@ -10,8 +11,6 @@
     "stillingsprosent" : 100
   } ],
   "arbeidsgiver" : {
-    "ident": {
-      "ident": "12345678901"
-    }
+    "orgnummer" : "123"
   }
 }

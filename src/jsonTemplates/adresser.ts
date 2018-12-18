@@ -1,3 +1,4 @@
+export default
 {
   "flereTreff": false,
   "adresseDataList": [

@@ -1,3 +1,5 @@
+"use strict";
+exports.__esModule = true;
 function settMockData(path, payload) {
     var url = getApiBaseUrl() + "internal/mock/tjeneste/" + path;
     var OPTIONS = {
