@@ -1,5 +1,5 @@
-export default
-{
+exports =
+    {
   "posteringsdato": "2018-12-01",
   "utbetaltTil": {
     "aktoerId": "12345678910",

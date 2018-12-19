@@ -1,4 +1,4 @@
-export default
+exports =
 {
   "arbeidsforholdIDnav" : 0,
   "ansettelsesPeriode" : {

@@ -1,16 +1,16 @@
-import endpoints from "./endpoints.js";
-import { settMockData } from "./mockRestUtils";
+const endpoints = require( "./endpoints.js");
+const { settMockData } = require( "./mockRestUtils");
 
-import adresserJSON from "./jsonTemplates/adresser.js";
-import arbeidJSON from "./jsonTemplates/arbeid.js";
-import brukerprofilJSON from "./jsonTemplates/brukerprofil.js";
-import familieJSON from "./jsonTemplates/familie.js";
-import norgJSON from "./jsonTemplates/norg.js";
-import organisasjonJSON from "./jsonTemplates/organisasjon.js";
-import telefonJSON from "./jsonTemplates/telefon.js";
-import utbetalingJSON from "./jsonTemplates/utbetaling.js";
+const adresserJSON = require( "./jsonTemplates/adresser.js");
+const arbeidJSON = require( "./jsonTemplates/arbeid.js");
+const brukerprofilJSON = require( "./jsonTemplates/brukerprofil.js");
+const familieJSON = require( "./jsonTemplates/familie.js");
+const norgJSON = require( "./jsonTemplates/norg.js");
+const organisasjonJSON = require( "./jsonTemplates/organisasjon.js");
+const telefonJSON = require( "./jsonTemplates/telefon.js");
+const utbetalingJSON = require( "./jsonTemplates/utbetaling.js");
 
-import midlertidigPostadresseJSON from "./jsonPartialTemplates/midlertidigPostadresse.js";
+const midlertidigPostadresseJSON = require( "./jsonPartialTemplates/midlertidigPostadresse.js");
 
 
 const adresser = adresserJSON;
@@ -19,7 +19,7 @@ const brukerprofil = brukerprofilJSON;
 const familie = familieJSON;
 const norg = norgJSON;
 const organisasjon = organisasjonJSON;
-var telefon = telefonJSON;
+const telefon = telefonJSON;
 const utbetaling = utbetalingJSON;
 
 const midlertidigPostadresse = midlertidigPostadresseJSON;
@@ -34,7 +34,7 @@ const PERSONNAVN= "personnavn";
 
 
 
-export const SystemdataMockAPI = {
+exports.systemdatamock = {
 
 	"settNavn" : (fornavn, mellomnavn, etternavn) => {
 		const navnObject =
@@ -59,7 +59,7 @@ export const SystemdataMockAPI = {
 		if (typeof telefonnummer === "undefined") {
 			throw new Error("Mangler telefonnummer (men det er lov å sette eksplisitt til null).")
 		}
-		telefon = { "verdi" : telefonnummer};
+		telefon[VERDI] = telefonnummer;
 	},
 
 	"settBankkontonummer" : (bankkontonummer) => {
@@ -155,11 +155,9 @@ export const SystemdataMockAPI = {
 		settMockData(endpoints.brukerprofil, brukerprofil);
 		settMockData(endpoints.arbeid, arbeid);
 		settMockData(endpoints.organisasjon, organisasjon);
-
 	},
 
 	"NoOp" : () => {
-		console.warn(telefon);
 
 	}
 };

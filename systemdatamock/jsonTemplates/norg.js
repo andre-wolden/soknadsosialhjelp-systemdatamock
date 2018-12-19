@@ -1,5 +1,5 @@
-export default
-{
+exports =
+    {
   "0701": {
     "enhetId": 100000141,
     "navn": "NAV Horten",

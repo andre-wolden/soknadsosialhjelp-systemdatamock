@@ -1,4 +1,4 @@
-export default
-{
+exports =
+    {
   "verdi" : "13371337"
 }

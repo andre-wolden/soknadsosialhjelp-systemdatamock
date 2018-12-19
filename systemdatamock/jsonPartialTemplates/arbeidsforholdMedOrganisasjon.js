@@ -1,5 +1,5 @@
-export default
-{
+exports =
+    {
   "arbeidsforholdIDnav" : 0,
   "ansettelsesPeriode" : {
     "periode" : {
@@ -11,8 +11,6 @@ export default
     "stillingsprosent" : 100
   } ],
   "arbeidsgiver" : {
-    "ident": {
-      "ident": "12345678901"
-    }
+    "orgnummer" : "123"
   }
 }

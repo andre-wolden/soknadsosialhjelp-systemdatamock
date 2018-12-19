@@ -1,4 +1,4 @@
-export default
+exports =
 {
   "postleveringsPeriode": null,
   "endringstidspunkt": null,

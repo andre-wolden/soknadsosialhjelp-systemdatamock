@@ -1,5 +1,5 @@
-export default
-{
+exports =
+    {
   "diskresjonskode": null,
   "bankkonto": null,
   "bostedsadresse": null,

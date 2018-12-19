@@ -1,5 +1,5 @@
-export default
-{
+exports =
+    {
   "adresser": "adresser",
   "norg": "norg",
   "telefon": "telefon",
