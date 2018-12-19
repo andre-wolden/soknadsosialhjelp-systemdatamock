@@ -1,5 +1,5 @@
 const endpoints = require( "./endpoints.js");
-const { settMockData } = require( "./mockRestUtils");
+const settMockData = require( "./mockRestUtils");
 
 const adresserJSON = require( "./jsonTemplates/adresser.js");
 const arbeidJSON = require( "./jsonTemplates/arbeid.js");
