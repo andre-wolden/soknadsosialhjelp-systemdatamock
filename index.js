@@ -2,7 +2,8 @@ const s = require('./systemdatamock/systemdatamock');
 
 systemdatamock = s.systemdatamock;
 
-systemdatamock.settTelefonnummer("99326807");
+systemdatamock.settTelefonnummer("99887766");
+systemdatamock.settNavn("Andre", "Kang", "Wolden");
+
 systemdatamock.send();
 
-console.warn(systemdatamock);

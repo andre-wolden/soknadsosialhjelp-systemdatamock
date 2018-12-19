@@ -1,4 +1,4 @@
-exports =
+module.exports =
     {
   "0701": {
     "enhetId": 100000141,

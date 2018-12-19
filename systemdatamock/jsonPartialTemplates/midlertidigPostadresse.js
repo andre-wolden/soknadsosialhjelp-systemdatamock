@@ -1,5 +1,5 @@
-exports =
-{
+module.exports =
+    {
   "postleveringsPeriode": null,
   "endringstidspunkt": null,
   "endretAv": null,

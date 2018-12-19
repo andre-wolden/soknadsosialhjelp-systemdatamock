@@ -1,4 +1,4 @@
-exports =
+module.exports =
     {
   "diskresjonskode": null,
   "bankkonto": null,

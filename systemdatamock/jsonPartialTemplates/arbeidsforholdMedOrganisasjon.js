@@ -1,4 +1,4 @@
-exports =
+module.exports =
     {
   "arbeidsforholdIDnav" : 0,
   "ansettelsesPeriode" : {

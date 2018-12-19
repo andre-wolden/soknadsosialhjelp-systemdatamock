@@ -1,4 +1,4 @@
-exports =
+module.exports =
     {
   "posteringsdato": "2018-12-01",
   "utbetaltTil": {

@@ -1,4 +1,4 @@
-exports =
+module.exports =
     {
   "adresser": "adresser",
   "norg": "norg",
