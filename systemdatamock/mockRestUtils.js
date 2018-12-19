@@ -1,6 +1,6 @@
 var http = require('http');
 
-exports = function settMockData(path, payload) {
+function settMockData(path, payload) {
 	// Build the post string from an object
 
 	var post_data = JSON.stringify(payload);
@@ -28,3 +28,5 @@ exports = function settMockData(path, payload) {
 	post_req.write(post_data);
 	post_req.end();
 }
+
+module.exports.settMockData = settMockData;
