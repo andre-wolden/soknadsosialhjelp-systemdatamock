@@ -1,6 +1,3 @@
-const mockrestutils = require( "./mockRestUtils");
-const settMockData = mockrestutils.settMockData;
-
 const endpoints = require( "./endpoints.js");
 
 const adresserJSON = require( "./jsonTemplates/adresser.js");
@@ -36,9 +33,9 @@ const PERSONNAVN= "personnavn";
 
 
 
-exports.systemdatamock = {
+module.exports = {
 
-	"settNavn" : (fornavn, mellomnavn, etternavn) => {
+	settNavn : (fornavn, mellomnavn, etternavn) => {
 		const navnObject =
 		{
 			"etternavn": etternavn,
@@ -53,18 +50,18 @@ exports.systemdatamock = {
 		familie[PERSONNAVN] = navnObject;
 	},
 
-	"settMidlertidigPostadresse" : (midlertidigPostadresseEgendefinertValue) => {
+	settMidlertidigPostadresse : (midlertidigPostadresseEgendefinertValue) => {
 		brukerprofil[PERSON][MIDLERTIDIGPOSTADRESSE] = midlertidigPostadresseJSON;
 	},
 
-	"settTelefonnummer" : (telefonnummer) => {
+	settTelefonnummer : (telefonnummer) => {
 		if (typeof telefonnummer === "undefined") {
 			throw new Error("Mangler telefonnummer (men det er lov å sette eksplisitt til null).")
 		}
 		telefon[VERDI] = telefonnummer;
 	},
 
-	"settBankkontonummer" : (bankkontonummer) => {
+	settBankkontonummer : (bankkontonummer) => {
 
 		if (bankkontonummer !== null){
 			brukerprofil[PERSON][BANKKONTO] = { "bankkonto" : { "bankkontonummer": bankkontonummer} }
@@ -73,7 +70,7 @@ exports.systemdatamock = {
 		}
 	},
 
-	"settArbeidsforholdMedArbeidsgivernummer" : (startDato, sluttDato, stillingsProsent, arbeidsgiverNummer, arbeidsgiverNavn ) => {
+	settArbeidsforholdMedArbeidsgivernummer : (startDato, sluttDato, stillingsProsent, arbeidsgiverNummer, arbeidsgiverNavn ) => {
 		const nyttArbeidsForhold =
 			{
 				"arbeidsforholdIDnav" : 0,
@@ -94,7 +91,7 @@ exports.systemdatamock = {
 		arbeid[ARBEIDSFORHOLD].push(nyttArbeidsForhold);
 	},
 
-	"settArbeidsforholdMedIdent" : (startDato, sluttDato, stillingsProsent, ident ) => {
+	settArbeidsforholdMedIdent : (startDato, sluttDato, stillingsProsent, ident ) => {
 		const nyttArbeidsForhold =
 			{
 				"arbeidsforholdIDnav" : 0,
@@ -116,7 +113,7 @@ exports.systemdatamock = {
 		arbeid[ARBEIDSFORHOLD].push(nyttArbeidsForhold);
 	},
 
-	"settArbeidsforholdMedOrganisasjonsnummer" : ( startDato, sluttDato, stillingsProsent, orgnummer ) => {
+	settArbeidsforholdMedOrganisasjonsnummer : ( startDato, sluttDato, stillingsProsent, orgnummer ) => {
 		const nyttArbeidsForhold =
 			{
 				"arbeidsforholdIDnav" : 0,
@@ -151,16 +148,8 @@ exports.systemdatamock = {
 		organisasjon[ORGANISASJON] = nyOrganisasjon;
 	},
 
-	"send" : () => {
-		settMockData(endpoints.telefon, telefon);
-		settMockData(endpoints.familie, familie);
-		settMockData(endpoints.brukerprofil, brukerprofil);
-		settMockData(endpoints.arbeid, arbeid);
-		settMockData(endpoints.organisasjon, organisasjon);
-	},
+	getDkifPath : () => { return endpoints.telefon; },
+    getDkifJson : () => { return telefon; }
 
-	"NoOp" : () => {
-
-	}
 };
 
