@@ -148,8 +148,21 @@ module.exports = {
 		organisasjon[ORGANISASJON] = nyOrganisasjon;
 	},
 
-	getDkifPath : () => { return endpoints.telefon; },
-    getDkifJson : () => { return telefon; }
-
+    getAdresserPath : () => { return endpoints.adresser },
+    getAdresserJson : () => { return adresser },
+    getNorgPath : () => { return endpoints.norg },
+    getNorgJson : () => { return norg },
+    getTelefonPath : () => { return endpoints.telefon },
+    getTelefonJson : () => { return telefon },
+    getBrukerprofilPath : () => { return endpoints.brukerprofil },
+    getBrukerprofilJson : () => { return brukerprofil },
+    getArbeidPath : () => { return endpoints.arbeid },
+    getArbeidJson : () => { return arbeid },
+    getOrganisasjonPath : () => { return endpoints.organisasjon },
+    getOrganisasjonJson : () => { return organisasjon },
+    getFamiliePath : () => { return endpoints.familie },
+    getFamilieJson : () => { return familie },
+    getUtbetalingPath : () => { return endpoints.utbetaling },
+    getUtbetalingJson : () => { return utbetaling },
 };
 
