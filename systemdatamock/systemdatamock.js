@@ -13,11 +13,11 @@ const midlertidigPostadresseJSON = require( "./jsonPartialTemplates/midlertidigP
 
 
 const adresser = adresserJSON;
-const arbeid = arbeidJSON;
+let arbeid = arbeidJSON;
 const brukerprofil = brukerprofilJSON;
 const familie = familieJSON;
 const norg = norgJSON;
-const organisasjon = organisasjonJSON;
+let organisasjon = organisasjonJSON;
 const telefon = telefonJSON;
 const utbetaling = utbetalingJSON;
 
@@ -131,21 +131,32 @@ module.exports = {
 				}
 			};
 		arbeid[ARBEIDSFORHOLD].push(nyttArbeidsForhold);
+	},
 
-		const nyOrganisasjon =
-		{
-			"orgnummer": orgnummer,
-			"navn": {
-			"navnelinje": [
-				"Navn på organisasjon."
-			]
-		},
-			"organisasjonDetaljer": null,
-			"bestaarAvOrgledd": [],
-			"inngaarIJuridiskEnhet": [],
-			"virksomhetDetaljer": null
-		};
-		organisasjon[ORGANISASJON] = nyOrganisasjon;
+	clearArbeidsforhold : () => {
+		arbeid = arbeidJSON;
+	},
+
+	settOrganisasjon : ( orgnummer, navn ) => {
+		organisasjon = organisasjonJSON;
+        const nyOrganisasjon =
+            {
+                "orgnummer": orgnummer,
+                "navn": {
+                    "navnelinje": [
+                        navn
+                    ]
+                },
+                "organisasjonDetaljer": null,
+                "bestaarAvOrgledd": [],
+                "inngaarIJuridiskEnhet": [],
+                "virksomhetDetaljer": null
+            };
+        organisasjon[ORGANISASJON] = nyOrganisasjon;
+	},
+
+	clearOrganisasjon : () => {
+		organisasjon = null;
 	},
 
     getAdresserPath : () => { return endpoints.adresser },
