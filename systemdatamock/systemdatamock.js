@@ -121,7 +121,7 @@ module.exports = {
 		organisasjon = organisasjonJSON;
         const nyOrganisasjon = nyOrganisasjonJSON;
         nyOrganisasjon.orgnummer = orgnummer;
-        nyOrganisasjon.navn = [ navn ];
+        nyOrganisasjon.navn.navnelinje = [ navn ];
 
         organisasjon[ORGANISASJON] = nyOrganisasjon;
 	},
