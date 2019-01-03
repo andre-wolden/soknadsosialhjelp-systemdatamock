@@ -142,6 +142,7 @@ module.exports = {
 		ektefelle.tilPerson.foedselsdato.foedselsdato = foedselsdato;
 
 		familie.harFraRolleI.push(ektefelle);
+		familie.sivilstand.sivilstand.value = "GIFT"
     },
 
     settEktefelleUtenSammeBostedsadresse : (ident, fornavn, mellomnavn, etternavn, foedselsdato) => {
@@ -156,6 +157,7 @@ module.exports = {
         ektefelle.tilPerson.foedselsdato.foedselsdato = foedselsdato;
 
         familie.harFraRolleI.push(ektefelle);
+        familie.sivilstand.sivilstand.value = "GIFT"
     },
 
 	settBarnSameBostedsadresse : (ident, fornavn, mellomnavn, etternavn) => {

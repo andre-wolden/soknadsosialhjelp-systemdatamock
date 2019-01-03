@@ -5,7 +5,7 @@ module.exports =
   "bostedsadresse": null,
   "sivilstand": {
     "sivilstand": {
-      "value": "GIFT",
+      "value": "UGIFT",
       "kodeRef": null,
       "kodeverksRef": "http://nav.no/kodeverk/Kodeverk/Sivilstander"
     },
