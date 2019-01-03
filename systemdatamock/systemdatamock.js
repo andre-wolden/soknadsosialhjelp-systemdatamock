@@ -16,7 +16,7 @@ const arbeidsforholdMedOrganisasjonJSON = require("./jsonPartialTemplates/arbeid
 const ektefelleJSON = require('./jsonPartialTemplates/ektefelle');
 const barnSammeBostedsadresseJSON = require('./jsonPartialTemplates/barnSammeBostedsadresse');
 const barnIkkeSammeBostedsadresseJSON = require('./jsonPartialTemplates/barnIkkeSammeBostedsadresse');
-const barnMedDodsdatoJSON = require('./jsonPartialTemplates/barnMedDodsdato');
+const barnMedDoedsdatoJSON = require('./jsonPartialTemplates/barnMedDoedsdato');
 const nyOrganisasjonJSON = require('./jsonPartialTemplates/organisasjon');
 
 
@@ -158,7 +158,7 @@ module.exports = {
         familie.harFraRolleI.push(ektefelle);
     },
 
-	settBarnSameBostedsadresse : () => {
+	settBarnSameBostedsadresse : (ident, fornavn, mellomnavn, etternavn) => {
         const barnSammeBostedsadresse = barnSammeBostedsadresseJSON;
 
         barnSammeBostedsadresse.tilPerson.ident = ident;
@@ -169,7 +169,7 @@ module.exports = {
         familie.harFraRolleI.push(barnSammeBostedsadresse);
     },
 
-    settBarnIkkeSameBostedsadresse : () => {
+    settBarnIkkeSameBostedsadresse : (ident, fornavn, mellomnavn, etternavn) => {
         const barnIkkeSammeBostedsadresse = barnIkkeSammeBostedsadresseJSON;
 
         barnIkkeSammeBostedsadresse.tilPerson.ident = ident;
@@ -180,15 +180,16 @@ module.exports = {
         familie.harFraRolleI.push(barnIkkeSammeBostedsadresse);
     },
 
-    settBarnMedDodsdato : () => {
-        const barnMedDodsdato = barnMedDodsdatoJSON;
+    settBarnMedDoedsdato : (ident, fornavn, mellomnavn, etternavn, doedsdato) => {
+        const barnMedDoedsdato = barnMedDoedsdatoJSON;
 
-        barnMedDodsdato.tilPerson.ident = ident;
-        barnMedDodsdato.tilPerson.personnavn.fornavn = fornavn;
-        barnMedDodsdato.tilPerson.personnavn.mellomnavn = mellomnavn;
-        barnMedDodsdato.tilPerson.personnavn.etternavn = etternavn;
+        barnMedDoedsdato.tilPerson.ident = ident;
+        barnMedDoedsdato.tilPerson.personnavn.fornavn = fornavn;
+        barnMedDoedsdato.tilPerson.personnavn.mellomnavn = mellomnavn;
+        barnMedDoedsdato.tilPerson.personnavn.etternavn = etternavn;
+        barnMedDoedsdato.tilPerson.doedsdato.doedsdato = doedsdato;
 
-        familie.harFraRolleI.push(barnMedDodsdato);
+        familie.harFraRolleI.push(barnMedDoedsdato);
     },
 
 	clearFamilieforhold : () => {

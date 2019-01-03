@@ -33,7 +33,7 @@ module.exports = {
         "personstatus": null,
         "postadresse": null,
         "doedsdato": {
-        "doedsdato": 1391295600000,
+            "doedsdato": null,
             "endringstidspunkt": null,
             "endretAv": null,
             "endringstype": null
