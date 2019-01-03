@@ -1,16 +1,15 @@
-module.exports =
-    {
+module.exports = {
   "arbeidsforholdIDnav" : 0,
   "ansettelsesPeriode" : {
     "periode" : {
-      "fom" : 1388617200000,
-      "tom" : 1545260400000
+      "fom" : null,
+      "tom" : null
     }
   },
   "arbeidsavtale" : [ {
-    "stillingsprosent" : 100
+    "stillingsprosent" : null
   } ],
   "arbeidsgiver" : {
-    "orgnummer" : "123"
+    "orgnummer" : null
   }
-}
+};
