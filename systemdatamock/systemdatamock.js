@@ -83,7 +83,7 @@ module.exports = {
 
 		nyttArbeidsForholdMedArbeidsgivernummer.ansettelsesPeriode.periode.fom = startDato;
 		nyttArbeidsForholdMedArbeidsgivernummer.ansettelsesPeriode.periode.tom = sluttDato;
-		nyttArbeidsForholdMedArbeidsgivernummer.arbeidsavtale.stillingsprosent = parseInt(stillingsProsent, 10);
+		nyttArbeidsForholdMedArbeidsgivernummer.arbeidsavtale[0].stillingsprosent = stillingsProsent;
 		nyttArbeidsForholdMedArbeidsgivernummer.arbeidsgiver.arbeidsgivernummer = arbeidsgiverNummer;
 		nyttArbeidsForholdMedArbeidsgivernummer.arbeidsgiver.navn = arbeidsgiverNavn;
 
@@ -96,7 +96,7 @@ module.exports = {
 
 		nyttArbeidsForholdMedIdent.ansettelsesPeriode.periode.fom = startDato;
 		nyttArbeidsForholdMedIdent.ansettelsesPeriode.periode.tom = sluttDato;
-		nyttArbeidsForholdMedIdent.arbeidsavtale.stillingsprosent = stillingsProsent;
+		nyttArbeidsForholdMedIdent.arbeidsavtale[0].stillingsprosent = stillingsProsent;
 		nyttArbeidsForholdMedIdent.arbeidsgiver.ident.ident = ident;
 
 		arbeid[ARBEIDSFORHOLD].push(nyttArbeidsForholdMedIdent);
@@ -107,7 +107,7 @@ module.exports = {
 
 		nyttArbeidsForholdMedOrganisasjon.ansettelsesPeriode.periode.fom = startDato;
 		nyttArbeidsForholdMedOrganisasjon.ansettelsesPeriode.periode.tom = sluttDato;
-		nyttArbeidsForholdMedOrganisasjon.arbeidsavtale.stillingsprosent = stillingsProsent;
+		nyttArbeidsForholdMedOrganisasjon.arbeidsavtale[0].stillingsprosent = stillingsProsent;
 		nyttArbeidsForholdMedOrganisasjon.arbeidsgiver.orgnummer = orgnummer;
 
 		arbeid[ARBEIDSFORHOLD].push(nyttArbeidsForholdMedOrganisasjon);

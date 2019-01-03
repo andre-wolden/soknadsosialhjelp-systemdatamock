@@ -6,9 +6,11 @@ module.exports = {
       "tom" : null
     }
   },
-  "arbeidsavtale" : [ {
-    "stillingsprosent" : null
-  } ],
+  "arbeidsavtale" : [
+    {
+      "stillingsprosent" : null
+    }
+  ],
   "arbeidsgiver" : {
     "arbeidsgivernummer": null,
     "navn": null

@@ -1,12 +1,6 @@
 const systemdatamock = require('./systemdatamock/systemdatamock');
 
 
-systemdatamock.settTelefonnummer("99887766");
-let telefon = systemdatamock.getTelefonJson();
-
-console.warn(telefon);
-
-systemdatamock.settOrganisasjon("1337", "Team Liquied");
-let organisasjon = systemdatamock.getOrganisasjonJson();
-console.warn(organisasjon.organisasjon.navn.navnelinje);
+systemdatamock.settArbeidsforholdMedArbeidsgivernummer("2019-01-01", "2019-01-02", '99', '123', 'Team Liquid');
+console.warn(systemdatamock.getArbeidJson().arbeidsforhold[0]);
 
