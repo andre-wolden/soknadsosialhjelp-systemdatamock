@@ -163,7 +163,7 @@ module.exports = {
 	settBarnSameBostedsadresse : (ident, fornavn, mellomnavn, etternavn) => {
         const barnSammeBostedsadresse = barnSammeBostedsadresseJSON;
 
-        barnSammeBostedsadresse.tilPerson.ident = ident;
+        barnSammeBostedsadresse.tilPerson.ident.ident = ident;
         barnSammeBostedsadresse.tilPerson.personnavn.fornavn = fornavn;
         barnSammeBostedsadresse.tilPerson.personnavn.mellomnavn = mellomnavn;
         barnSammeBostedsadresse.tilPerson.personnavn.etternavn = etternavn;
@@ -174,7 +174,7 @@ module.exports = {
     settBarnIkkeSameBostedsadresse : (ident, fornavn, mellomnavn, etternavn) => {
         const barnIkkeSammeBostedsadresse = barnIkkeSammeBostedsadresseJSON;
 
-        barnIkkeSammeBostedsadresse.tilPerson.ident = ident;
+        barnIkkeSammeBostedsadresse.tilPerson.ident.ident = ident;
         barnIkkeSammeBostedsadresse.tilPerson.personnavn.fornavn = fornavn;
         barnIkkeSammeBostedsadresse.tilPerson.personnavn.mellomnavn = mellomnavn;
         barnIkkeSammeBostedsadresse.tilPerson.personnavn.etternavn = etternavn;
@@ -185,7 +185,7 @@ module.exports = {
     settBarnMedDoedsdato : (ident, fornavn, mellomnavn, etternavn, doedsdato) => {
         const barnMedDoedsdato = barnMedDoedsdatoJSON;
 
-        barnMedDoedsdato.tilPerson.ident = ident;
+        barnMedDoedsdato.tilPerson.ident.ident = ident;
         barnMedDoedsdato.tilPerson.personnavn.fornavn = fornavn;
         barnMedDoedsdato.tilPerson.personnavn.mellomnavn = mellomnavn;
         barnMedDoedsdato.tilPerson.personnavn.etternavn = etternavn;
