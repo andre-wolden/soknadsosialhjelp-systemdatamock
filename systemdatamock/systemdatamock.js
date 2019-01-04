@@ -170,7 +170,11 @@ module.exports = {
         ektefelle.tilPerson.personnavn.mellomnavn = mellomnavn;
         ektefelle.tilPerson.personnavn.etternavn = etternavn;
         ektefelle.tilPerson.foedselsdato.foedselsdato = foedselsdato;
-        ektefelle.tilPerson.diskresjonskode = '{ "kodeverksRef": "6"}';
+        ektefelle.tilPerson.diskresjonskode = {
+            "value": "SPSF",
+            "kodeRef": null,
+            "kodeverksRef": "http://nav.no/kodeverk/Kodeverk/Diskresjonskoder"
+        };
 
         familie.harFraRolleI.push(ektefelle);
         familie.sivilstand.sivilstand.value = "GIFT"
@@ -186,7 +190,11 @@ module.exports = {
         ektefelle.tilPerson.personnavn.mellomnavn = mellomnavn;
         ektefelle.tilPerson.personnavn.etternavn = etternavn;
         ektefelle.tilPerson.foedselsdato.foedselsdato = foedselsdato;
-        ektefelle.tilPerson.diskresjonskode = '{ "kodeverksRef": "7"}';
+        ektefelle.tilPerson.diskresjonskode = {
+            "value": "SPFO",
+            "kodeRef": null,
+            "kodeverksRef": "http://nav.no/kodeverk/Kodeverk/Diskresjonskoder"
+        };
 
         familie.harFraRolleI.push(ektefelle);
         familie.sivilstand.sivilstand.value = "GIFT"
