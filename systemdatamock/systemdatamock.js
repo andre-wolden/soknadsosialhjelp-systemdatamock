@@ -18,6 +18,8 @@ const barnSammeBostedsadresseJSON = require('./jsonPartialTemplates/barnSammeBos
 const barnIkkeSammeBostedsadresseJSON = require('./jsonPartialTemplates/barnIkkeSammeBostedsadresse');
 const barnMedDoedsdatoJSON = require('./jsonPartialTemplates/barnMedDoedsdato');
 const nyOrganisasjonJSON = require('./jsonPartialTemplates/organisasjon');
+const utbetalingBarnetrygd = require('./jsonPartialTemplates/utbetalingBarnetrygd');
+const utbetalingOnkelSkruePenger = require('./jsonPartialTemplates/utbetalingOnkelSkruePenger');
 
 
 const adresser = adresserJSON;
@@ -237,6 +239,14 @@ module.exports = {
 	clearFamilieforhold : () => {
 		familie = familieJSON;
 	},
+
+	settUtbetalingerBarnetrygd : () => {
+		utbetaling.ytelseListe.push(utbetalingBarnetrygd)
+	},
+
+    settUtbetalingerOnkelSkruePenger : () => {
+        utbetaling.ytelseListe.push(utbetalingOnkelSkruePenger)
+    },
 
     getAdresserPath : () => { return endpoints.adresser },
     getAdresserJson : () => { return adresser },
