@@ -148,7 +148,7 @@ module.exports = {
     settEktefelleUtenSammeBostedsadresse : (ident, fornavn, mellomnavn, etternavn, foedselsdato) => {
         const ektefelle = ektefelleJSON;
 
-        ektefelle.harSammeBosted = true;
+        ektefelle.harSammeBosted = false;
 
         ektefelle.tilPerson.ident.ident = ident;
         ektefelle.tilPerson.personnavn.fornavn = fornavn;
