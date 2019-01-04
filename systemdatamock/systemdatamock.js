@@ -160,6 +160,38 @@ module.exports = {
         familie.sivilstand.sivilstand.value = "GIFT"
     },
 
+	settEktefelleMedKodeSeks: (ident, fornavn, mellomnavn, etternavn, foedselsdato) => {
+        const ektefelle = ektefelleJSON;
+
+        ektefelle.harSammeBosted = false;
+
+        ektefelle.tilPerson.ident.ident = ident;
+        ektefelle.tilPerson.personnavn.fornavn = fornavn;
+        ektefelle.tilPerson.personnavn.mellomnavn = mellomnavn;
+        ektefelle.tilPerson.personnavn.etternavn = etternavn;
+        ektefelle.tilPerson.foedselsdato.foedselsdato = foedselsdato;
+        ektefelle.tilPerson.diskresjonskode = "6";
+
+        familie.harFraRolleI.push(ektefelle);
+        familie.sivilstand.sivilstand.value = "GIFT"
+	},
+
+	settEktefelleMedKodeSyv: (ident, fornavn, mellomnavn, etternavn, foedselsdato) => {
+        const ektefelle = ektefelleJSON;
+
+        ektefelle.harSammeBosted = false;
+
+        ektefelle.tilPerson.ident.ident = ident;
+        ektefelle.tilPerson.personnavn.fornavn = fornavn;
+        ektefelle.tilPerson.personnavn.mellomnavn = mellomnavn;
+        ektefelle.tilPerson.personnavn.etternavn = etternavn;
+        ektefelle.tilPerson.foedselsdato.foedselsdato = foedselsdato;
+        ektefelle.tilPerson.diskresjonskode = "7";
+
+        familie.harFraRolleI.push(ektefelle);
+        familie.sivilstand.sivilstand.value = "GIFT"
+	},
+
 	settBarnSameBostedsadresse : (ident, fornavn, mellomnavn, etternavn) => {
         const barnSammeBostedsadresse = barnSammeBostedsadresseJSON;
 
